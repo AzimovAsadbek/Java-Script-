@@ -22,7 +22,9 @@
 //   "Saturday",
 // ];
 // let date = new Date();
-// let yy = date.getFullYear() - Math.round(date.getFullYear() / 100) * 100;
+// let yy = date.getFullYear() % 100;
+// let am_pm = date.getHours > 12 ? "PM" : "AM";
+// console.log(am_pm);
 
 // const moment = () => {
 //   return {
@@ -31,7 +33,7 @@
 //         case "MMMM Do YYYY, h:mm:ss a":
 //           return `${
 //             month[date.getMonth()]
-//           } ${date.getDate()}th ${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} pm`;
+//           } ${date.getDate()}th ${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${am_pm}`;
 //           break;
 //         case "dddd":
 //           return `${day[date.getDay()]}`;
@@ -43,10 +45,10 @@
 //           )} ${date.getDate()}th ${yy}`;
 //           break;
 //         case "LT":
-//           return `${date.getHours()}:${date.getMinutes()} PM`;
+//           return `${date.getHours()}:${date.getMinutes()} ${am_pm}`;
 //           break;
 //         case "LTS":
-//           return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} PM`;
+//           return `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} ${am_pm}`;
 //           break;
 //         case "L":
 //           return `${date.getMonth()}/${date.getDate()}/${date.getFullYear()}`;
@@ -68,18 +70,18 @@
 //         case "LLL":
 //           return `${
 //             month[date.getMonth()]
-//           } ${date.getDate()} ${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()} PM`;
+//           } ${date.getDate()} ${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()} ${am_pm}`;
 //           break;
 //         case "lll":
 //           return `${month[date.getMonth()].slice(
 //             0,
 //             3
-//           )} ${date.getDate()} ${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()} PM`;
+//           )} ${date.getDate()} ${date.getFullYear()}, ${date.getHours()}:${date.getMinutes()} ${am_pm}`;
 //           break;
 //         case "LLLL":
 //           return `${day[date.getDay()]}, ${
 //             month[date.getMonth()]
-//           } ${date.getDate()}, ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()} PM`;
+//           } ${date.getDate()}, ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()} ${am_pm}`;
 //           break;
 //         case "llll":
 //           return `${day[date.getDay()].slice(0, 3)}, ${month[
@@ -87,7 +89,7 @@
 //           ].slice(
 //             0,
 //             3
-//           )} ${date.getDate()}, ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()} PM`;
+//           )} ${date.getDate()}, ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()} ${am_pm}`;
 //           break;
 //       }
 //     },
@@ -106,7 +108,6 @@
 // console.log(moment().format("lll"));
 // console.log(moment().format("LLLL"));
 // console.log(moment().format("llll"));
-
 
 // Masalalar
 
