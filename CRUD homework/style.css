@@ -1,0 +1,105 @@
+table {
+  border-collapse: collapse;
+  margin-top: 24px;
+  margin-left: 463px;
+  min-width: 655px;
+  position: relative;
+}
+td,
+th {
+  border: 1px solid gray;
+  padding: 10px;
+}
+.delete,
+.edit {
+  border: none;
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  padding: 4px;
+  transition: 0.3s linear;
+}
+.delete,
+.deletebtn {
+  background-color: red;
+}
+.edit,
+.editbtn,
+.createBtn {
+  background-color: green;
+}
+.edit:hover,
+.delete:hover,
+.deletebtn:hover,
+.editbtn:hover,
+.createBtn:hover {
+  opacity: 0.6;
+}
+.edit:active,
+.delete:active,
+.deletebtn:active .editbtn:active,
+.createBtn:active {
+  opacity: 0.9;
+}
+
+.editbtn,
+.deletebtn {
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 4px;
+  transition: 0.3s linear;
+}
+
+.search {
+  width: 300px;
+  height: 30px;
+  border-radius: 16px;
+  padding-left: 12px;
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 50px;
+  position: absolute;
+}
+
+.create {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.addyear,
+.addname {
+    width: 180px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.createBtn {
+    border: none;
+    width: 45px;
+    height: 26px;
+    border-radius: 4px;
+    color: white;
+}
+
+.sortcon {
+    position: absolute;
+    top: 160px;
+    left: 35px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#sort {
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    margin-top: 4px;
+    font-size: 16px;
+}

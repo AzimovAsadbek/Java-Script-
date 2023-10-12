@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form action="" class="create">
+      <input type="number" placeholder="Year" class="addyear" required />
+      <input type="text" placeholder="Name" class="addname" required />
+      <button type="submit" class="createBtn">Add</button>
+    </form>
+    <input type="text" class="search" placeholder="Qidiruv" />
+    <div class="sortcon">
+      <label for="sort">Joylashuv tartibi: </label>
+      <select name="" id="sort">
+        <option value="id">Id</option>
+        <option value="name">Name</option>
+        <option value="year">Year</option>
+      </select>
+    </div>
+    <table>
+      <thead>
+        <th>ID</th>
+        <th>Tug'ilgan kun</th>
+        <th>Ism Familiya</th>
+        <th>O'chirish</th>
+        <th>Tahrirlash</th>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="./index.js"></script>
+  </body>
+</html>
